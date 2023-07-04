@@ -1,0 +1,353 @@
+/* melakukan configurasi HTML dan BODY */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', Tahoma, sans-serif, Geneva, Tahoma, sans-serif;
+    line-height: 1.65;
+}
+
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Mengatur navbar */
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+} 
+
+.nav-navigation ul {
+    margin-right: 50px;
+}
+
+.nav-navigatiton ul li {
+    display: inline-flex;
+    align-items: center;
+    list-style-type: none;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 20px;
+    background-color:  #88a4ad;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo img {
+    width: 70px;
+    mix-blend-mode: multiply;
+    margin-left: 15px;
+}
+
+/* Hero Image */
+.hero-container {
+    padding-top: 80px;
+    width: 100%;
+    margin: auto;
+}
+
+.hero {
+    height: 578px;
+    background: url(../assets/hero_mage/hero3.jpg);
+    background-size: cover;
+    background-position: 0px -50px;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    padding: 50px 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Mengatur Headline */
+.headlines {
+    display: flex;
+    width: 800px;
+    margin: 50px auto;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.our-headquarter {
+   width: 100%; 
+}
+
+.profile-headline {
+    margin-left: 100%;
+}
+
+.profile {
+    display: flex;
+    margin-left: 40px;
+}
+
+.profile-image {
+    margin: 50px;
+}
+
+.profile-text {
+    text-align: center;
+}
+
+.our-headquarter .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+/* Massage Us */
+.massage-container {
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-input-container{
+    margin-left: 100px;
+    flex: 1;
+}
+
+.form-input-container .input-form {
+    width: 435px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: #077bcd;
+    border: none;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+.form-input-container .input-form:hover {
+    
+    background-color: #29313c;
+
+}
+
+.form-input-container table {
+    padding: 40px;
+    color: black;
+}
+
+.form-input-container table td {
+    width: 400px;
+    height: 40px;
+    padding: 5px;
+}
+
+.form-input-container table tr input {
+    border: none;
+    border-radius: 4px;
+    color: black;
+}
+
+.input-form {
+    width: 250px;
+    height: 40px;
+}
+
+.output-container {
+    margin-right: 100px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.output-box {
+    margin: 50px;
+    padding: 20px;
+    width: 550px;
+    height: 300px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.output-massage {
+    color: black;
+    font-size: larger;
+    margin: 15px auto;
+}
+
+    
+/* mengatur main content */
+/* Gambar */
+.container-satu {
+    display: flex;
+    width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.box-photo img {
+    width: 480px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+/* form */
+.form-container {
+    background-color: #cbd9d4;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 20px;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.form-container-text {
+    width: 360px;
+    padding-left: 20px;
+}
+
+.form div {
+    margin: 10px;
+}
+
+.form div .input {
+    width: 360px;
+    height: 42px;
+    border-radius: 4px;
+    display: flex;  
+    border: #89919c;
+}
+
+.form div .button {
+    width: 360px;
+    height: 42px;
+    background-color: #88a6b0;
+    color: black;
+    border: none;
+    cursor: pointer;
+
+}
+
+.form div .button:hover {
+    background-color: #28303b;
+}
+
+/* user testimoni */
+.testimoni {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 8px;
+}
+
+
+.testimoni img {
+    width: 40px;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.bos-container {
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+}
+
+/* Feature */
+
+.feature {
+    display: flex;
+}
+
+.feature .icon {
+    padding: 15px;
+}
+
+.circle {
+    background: whitesmoke;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color:  gray;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 48px;
+    margin-right: 5px;
+    text-align: center;
+    width: 48px;
+    justify-content: center;
+}
+
+/* First Feature */
+
+/* Our Package */
+.our-package {
+    margin: 50px auto;
+    width: 960px;
+    display: flex;
+    justify-content: center;
+    background-color: #34344d;
+    padding: 20px;
+    color: white;
+}
+
+/* package-country */
+.package-country {
+    width: 960px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.country {
+    display: flex;
+    justify-content: center;
+}
+
+.country img {
+    margin: 20px;
+    width: 48px;
+}
+
+.call-action {
+    margin-top: 80%;
+    margin-bottom: 80px;
+}
+
+.call-action .headlines {
+    width: 960px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.call-action .headlines button {
+    margin-top: 40px;
+    width: 400px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: black;
+    font-size: 18px;
+    color: white;
+}
