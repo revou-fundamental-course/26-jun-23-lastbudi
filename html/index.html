@@ -11,23 +11,28 @@
 
 <body>
     <!-- navbar -->
-    <nav class="nav-container">
+    <nav>
         <div class="logo">
             <img src="../assets/logo.png" alt="ini logo ya">
         </div>
-        <div class="nav-navigation">
-            <ul>
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>Our Package</li>
-                <li><a href=""></a>Call Us</li>
-            </ul>
+        <ul>
+            <li><a href="#direct-home"></a>Home</li>
+            <li><a href="#direct-package"></a>Our Package</li>
+            <li><a href="#direct-call"</a>Call Us</li>
+        </ul>
+
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </nav>
     <!-- Akhir Dari Navbar -->
 
     <!-- Gambar Hero -->
-    <div class="hero-container">
-        <div class="hero">
+    <div id="direct-home" class="hero-container">
+        <div id="image-slide" class="hero">
             <div class="hero-text">
                 <h1>Hi Budi Setiawan, Welcome To Website</h1>
                 <p>Ini Latihan Website Pertama</p>
@@ -36,12 +41,9 @@
     </div>
     <!-- akhir gambar hero -->
 
-
     <!-- our headquarter -->
     <div class="our-headquarter">
-        <div class="profile-headline">
-            <h1>Our Headquarter</h1>
-        </div>
+        <h1>Our Headquarter</h1>
         <div class="profile">
             <div class="profile-text">
                 <img src="../assets/headquarters/jakarta.jpg" alt="">
@@ -96,30 +98,27 @@
             </section>
             <section class="feature">
                 <div class="icon">
-                    <!-- <img src="../assets/number-1.png" alt=""> -->
                     <div class="circle">1</div>
                 </div>
-                <div>
+
                     <p>Your first feature, written in the form of a benefit statement</p>
-                </div>
+
             </section>
             <section class="feature">
                 <div class="icon">
-                    <!-- <img src="../assets/number-2.png" alt=""> -->
                     <div class="circle">2</div>
                 </div>
-                <div>
+
                     <p>Your first feature, written in the form of a benefit statement</p>
-                </div>
+
             </section>
             <section class="feature">
                 <div class="icon">
-                    <!-- <img src="../assets/number-3.png" alt=""> -->
                     <div class="circle">3</div>
                 </div>
-                <div>
+
                     <p>Your first feature, written in the form of a benefit statement</p>
-                </div>
+
             </section>
         </section>
 
@@ -128,14 +127,23 @@
                 <h1>Contact Us</h1>
                 <p>Sales akan menghubungin anda 1x24 jam setelah data kami terima</p>
             </div>
-            <form class="form">
+            <form name="form" class="form" onsubmit="retur validateForm">
                 <div>
                     <label>Your Name:</label>
-                    <input class="input" type="text" placeholder="First and Last Name">
+                    <input class="input" id="fullname" type="text" placeholder="First and Last Name">
                 </div>
                 <div>
                     <label>Email Address:</label>
-                    <input class="input" type="text" placeholder="example@gmail.com">
+                    <input class="input" id="email" type="email" name="email" placeholder="example@gmail.com">
+                </div>
+                <div>
+                    <label for="phone">Your phone number</label>
+                    <input class="input" type="tel" id="phone" name="phone" placeholder="08987654321">
+                </div>
+                <div>
+                    <label for="message">Message</label><br>
+                    <textarea id="message" class="input" cols="4" rows="50"
+                        placeholder="Message your here"></textarea>              
                 </div>
                 <div>
                     <label for="option">What are you interested in</label><br>
@@ -153,7 +161,7 @@
         </section>
     </main>
 
-    <main class="our-package">
+    <main id="direct-package" class="our-package">
         <h1>
             Our Package
         </h1>
@@ -162,7 +170,7 @@
     <main class="package-country">
         <div class="country">
             <div class="logo-country">
-                <img src="../assets/page.png" alt="">
+                <img src="../assets/key.png" alt="">
             </div>
             <div class="content-package">
                 <h2>Bali</h2>
@@ -172,7 +180,7 @@
 
         <div class="country">
             <div class="logo-country">
-                <img src="../assets/page.png" alt="">
+                <img src="../assets/key.png" alt="">
             </div>
             <div class="content-package">
                 <h2>Japan</h2>
@@ -182,7 +190,7 @@
 
         <div class="country">
             <div class="logo-country">
-                <img src="../assets/page.png" alt="">
+                <img src="../assets/key.png" alt="">
             </div>
             <div class="content-package">
                 <h2>Singapore</h2>
@@ -194,7 +202,7 @@
     <main class="package-country"> 
         <div class="country">
             <div class="logo-country">
-                <img src="../assets/star.png" alt="">
+                <img src="../assets/smile.png" alt="">
             </div>
             <div class="content-package">
                 <h2>Bandung</h2>
@@ -204,7 +212,7 @@
         
         <div class="country">
             <div class="logo-country">
-                <img src="../assets/star.png" alt="">
+                <img src="../assets/smile.png" alt="">
             </div>
             <div class="content-package">
                 <h2>Surabaya</h2>
@@ -214,7 +222,7 @@
 
         <div class="country">
             <div class="logo-country">
-                <img src="../assets/star.png" alt="">
+                <img src="../assets/smile.png" alt="">
             </div>
             <div class="content-package">
                 <h2>Third Feature</h2>

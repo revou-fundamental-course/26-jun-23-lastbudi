@@ -1,5 +1,7 @@
 /* melakukan configurasi HTML dan BODY */
-
+* {
+    color: black;
+}
 html,
 body {
     margin: 0;
@@ -15,7 +17,7 @@ button {
 }
 
 /* Mengatur navbar */
-.nav-container {
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,11 +28,11 @@ button {
     box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 } 
 
-.nav-navigation ul {
-    margin-right: 50px;
+nav ul {
+    display: flex;
 }
 
-.nav-navigatiton ul li {
+nav ul li {
     display: inline-flex;
     align-items: center;
     list-style-type: none;
