@@ -54,10 +54,10 @@ function validateForm() {
   window.addEventListener("DOMContentLoaded", function () {
     let slideIndex = 0;
     let slides = [
-      "../assets/hero_mage/hero1.jpg",
-      "../assets/hero_mage/hero2.jpg",
-      "../assets/hero_mage/hero3.jpg",
-      "../assets/hero_mage/buah.jpg",
+      "assets/hero_mage/hero1.jpg",
+      "assets/hero_mage/hero2.jpg",
+      "assets/hero_mage/hero3.jpg",
+      "assets/hero_mage/buah.jpg",
     ];
   
     let imageSlide = document.getElementById("image-slide");
